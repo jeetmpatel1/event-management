@@ -20,3 +20,20 @@ Put the below query inside  graphql  query editor
       createEvent(name:"Sports")
     }
 ```
+
+
+
+
+```
+mutation{
+  createEvent(eventInput: {title:"title",description:"sample desc",date:"2020-05-22T04:40:39.834Z",price:9.99}){title,description}
+}
+
+
+query{
+  events{
+    _id
+    date
+  }
+}
+```
